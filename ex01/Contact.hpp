@@ -6,7 +6,7 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 02:48:30 by dleite-b          #+#    #+#             */
-/*   Updated: 2025/10/01 02:57:27 by dleite-b         ###   ########.fr       */
+/*   Updated: 2025/10/01 15:16:58 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ class   Contact
         void        set_lname(std::string str);
         void        set_nick(std::string str);
         void        set_phone_num(std::string str);
+        void        set_secret(std::string str);
 };
 
 #endif
