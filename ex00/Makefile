@@ -6,7 +6,7 @@
 #    By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/28 21:27:16 by dleite-b          #+#    #+#              #
-#    Updated: 2025/09/28 22:02:42 by dleite-b         ###   ########.fr        #
+#    Updated: 2025/10/01 02:17:37 by dleite-b         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = megaphone.cpp
 OBJ = $(SRC:.cpp=.o)
+
 
 all: $(NAME)
 

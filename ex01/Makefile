@@ -1,12 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/10/01 02:16:23 by dleite-b          #+#    #+#              #
+#    Updated: 2025/10/01 02:18:44 by dleite-b         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
 NAME = phonebook
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Contact.cpp phonebook.cpp
+SRC = phonebook.cpp
 OBJ = $(SRC:.cpp=.o)
-HEADER = Contact.hpp phonebook.hpp
+
 
 
 all: $(NAME)
@@ -14,10 +25,11 @@ all: $(NAME)
 $(NAME): $(OBJ) $(HEADER)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJ)
 
-%.o :%-cpp
+%.o :%.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-clean: rm -rf $(OBJ)
+clean:
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
