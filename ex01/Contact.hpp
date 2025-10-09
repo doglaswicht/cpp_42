@@ -6,40 +6,27 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 02:48:30 by dleite-b          #+#    #+#             */
-/*   Updated: 2025/10/01 15:16:58 by dleite-b         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:09:02 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONTACT_HPP
-
 # define CONTACT_HPP
 
-# include <iostream>
-# include <string>
+#include <iostream>
+#include <string>
 
-class   Contact
-{
+class Contact {
     private:
-        std::string _fname;
-        std::string _lname;
-        std::string _nick;
-        std::string _phone_num;
-        std::string _secret;
-    
-    public:
-        Contact(void);
-        ~Contact(void);
-        
-        std::string get_fname(void) const;
-        std::string get_lname(void) const;
-        std::string get_nick(void) const;
-        std::string get_phone_num(void) const;
-        std::string get_secret(void) const;
-        void        set_fname(std::string str);
-        void        set_lname(std::string str);
-        void        set_nick(std::string str);
-        void        set_phone_num(std::string str);
-        void        set_secret(std::string str);
-};
+    std::string first_name;
+    std::string last_name;
+    std::string nickname;
+    std::string phone_number;
+    std::string darkest_secret;
 
+    public:
+        void setInfo();
+        void displayShort(int index) const;
+        void displayFull() const;
+};
 #endif

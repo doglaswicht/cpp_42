@@ -6,7 +6,7 @@
 #    By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/01 02:16:23 by dleite-b          #+#    #+#              #
-#    Updated: 2025/10/01 14:57:53 by dleite-b         ###   ########.fr        #
+#    Updated: 2025/10/09 12:10:03 by dleite-b         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = phonebook
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = Phonebook.cpp Phonebook_utils.cpp Contact.cpp main.cpp 
+SRC = Phonebook.cpp Contact.cpp main.cpp 
 OBJ = $(SRC:.cpp=.o)
 
 
