@@ -6,7 +6,7 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 02:19:09 by dleite-b          #+#    #+#             */
-/*   Updated: 2025/10/09 12:11:27 by dleite-b         ###   ########.fr       */
+/*   Updated: 2026/02/06 11:21:39 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,15 @@
 
 #include "Contact.hpp"
 
-class Phonebook{
+class PhoneBook{
     private:
         Contact contacts[8];
-        int count;
+        int count_;
     
     public:
-        Phonebook();
+        PhoneBook();
+        ~PhoneBook();
+        
         void addContact();
         void searchContact() const;
 };

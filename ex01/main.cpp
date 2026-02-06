@@ -5,33 +5,53 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 03:03:28 by dleite-b          #+#    #+#             */
-/*   Updated: 2025/10/09 12:13:45 by dleite-b         ###   ########.fr       */
+/*   Created: 2026/02/06 11:28:45 by dleite-b          #+#    #+#             */
+/*   Updated: 2026/02/06 11:32:57 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Phonebook.hpp"
+#include "PhoneBook.hpp"
 #include <iostream>
-
+#include <string>
+#include <iomanip>
+#include <cstdlib>
 
 int main()
 {
-    Phonebook phonebook;
+    PhoneBook  phonebook;
     std::string command;
-    
-    while(true)
+
+	std::cout << "*-----------------------------------------------*\n";
+    std::cout << "*-----------PHONEBOOK APPLICATION --------------*\n";
+	std::cout << "*-----------------------------------------------*\n";
+	while (true)
     {
-        std::cout << "Enter command (ADD, SEARCH, EXIT): ";
-        std::getline(std::cin, command);
-        
-        if(command == "ADD")
+		std::cout << "-------------------------------------------------\n";
+        std::cout << "-----Enter command (ADD, SEARCH, EXIT): ";
+
+        if (!std::getline(std::cin, command))
+        {
+            std::cout << "\nEOF detected. Exiting program.\n";
+            std::exit(0);
+        }
+
+        if (command == "ADD")
+        {
             phonebook.addContact();
-        else if(command == "SEARCH")
-            phonebook.searchContact();
-        else if(command == "EXIT" || std::cin.eof())
+        }
+        else if (command == "SEARCH")
+        {
+			phonebook.searchContact();
+        }
+        else if (command == "EXIT")
+        {
+            std::cout << "Goodbye!\n";
             break;
+        }
         else
-            std::cout << "Unknow command!" << std::endl;
+        {
+            std::cout << "Unknown command.\n";
+        }
     }
     return 0;
 }
