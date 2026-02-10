@@ -6,16 +6,16 @@
 #    By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/06 17:01:00 by dleite-b          #+#    #+#              #
-#    Updated: 2026/02/06 17:01:24 by dleite-b         ###   ########.fr        #
+#    Updated: 2026/02/10 09:11:51 by dleite-b         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = 
+NAME = hordeZombie
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = megaphone.cpp
+SRC = Zombie.cpp main.cpp zombieHorde.cpp
 OBJ = $(SRC:.cpp=.o)
 
 
