@@ -19,7 +19,7 @@ int main()
 {
     int N = 10;
 
-    Zombie* horde = zombieHorde(N, "horde");
+    Zombie* horde = zombieHorde(N, "epstein");
     
     for(int i = 0; i < N; i++)
     {
