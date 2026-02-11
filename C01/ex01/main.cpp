@@ -6,7 +6,7 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 22:24:00 by dleite-b          #+#    #+#             */
-/*   Updated: 2026/02/10 09:23:11 by dleite-b         ###   ########.fr       */
+/*   Updated: 2026/02/11 13:24:57 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main()
 {
     int N = 10;
 
-    Zombie* horde = zombieHorde(N, "epstein");
+    Zombie* horde = zombieHorde(N, "horde");
     
     for(int i = 0; i < N; i++)
     {
