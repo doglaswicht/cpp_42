@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 22:23:58 by dleite-b          #+#    #+#             */
-/*   Updated: 2026/02/09 15:42:08 by dleite-b         ###   ########.fr       */
+/*   Created: 2026/02/11 12:54:36 by dleite-b          #+#    #+#             */
+/*   Updated: 2026/02/11 13:13:23 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Harl.hpp"
 
-#include "Zombie.hpp"
+int main()
+{
+    Harl h;
+    h.complain("DEBUG");
+    h.complain("INFO");
+    h.complain("WARNING");
+    h.complain("ERROR");
+    h.complain("NOPE");
 
-Zombie::Zombie(std::string name) : name_(name) {
-}
-
-Zombie::~Zombie() {
-    std::cout << name_ << " is destroyed" << std::endl;
-}
-
-void Zombie::announce(void) {
-    std::cout << name_ << ": BraiiiiiiinnnzzzZ..." << std::endl;
+    return 0;
 }

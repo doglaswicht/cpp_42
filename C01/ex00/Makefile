@@ -6,11 +6,11 @@
 #    By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/06 17:01:00 by dleite-b          #+#    #+#              #
-#    Updated: 2026/02/08 23:01:03 by dleite-b         ###   ########.fr        #
+#    Updated: 2026/02/11 12:28:25 by dleite-b         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombie
+NAME = Zombie
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98

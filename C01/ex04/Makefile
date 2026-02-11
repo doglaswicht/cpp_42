@@ -6,16 +6,16 @@
 #    By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/06 17:01:00 by dleite-b          #+#    #+#              #
-#    Updated: 2026/02/11 12:26:42 by dleite-b         ###   ########.fr        #
+#    Updated: 2026/02/11 12:27:47 by dleite-b         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = UnnecessaryViolence
+NAME = SedIsForLosers
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 
