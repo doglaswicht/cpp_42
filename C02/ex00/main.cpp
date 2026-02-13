@@ -1,36 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/11 15:33:34 by dleite-b          #+#    #+#             */
-/*   Updated: 2026/02/11 15:37:41 by dleite-b         ###   ########.fr       */
+/*   Created: 2026/02/11 15:33:37 by dleite-b          #+#    #+#             */
+/*   Updated: 2026/02/11 15:33:38 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FIXED_HPP
- #define FIXED_HPP
+#include <iostream>
+#include "Fixed.hpp"
 
- #include <iostream>
+int main(void)
+{
+    Fixed a;
+    Fixed b(a);
+    Fixed c;
 
- class Fixed
- {
-    private:
-        int _rawBits;
-        static const int _fractionalBits = 8;
-    
-    public:
-        Fixed();
-        Fixed(const Fixed& other);
-        Fixed& operator=(const Fixed& other);
-        ~Fixed();
-        
-        int getRawBits(void)const;
-        void setRawBits(int const raw);
-        
- };
+    c = b;
 
+    std::cout << a.getRawBits() << std::endl;
+    std::cout << b.getRawBits() << std::endl;
+    std::cout << c.getRawBits() << std::endl;
 
- #endif
+    return 0;
+}
+
