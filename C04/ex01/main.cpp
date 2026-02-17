@@ -6,7 +6,7 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 10:36:07 by dleite-b          #+#    #+#             */
-/*   Updated: 2026/02/17 10:36:08 by dleite-b         ###   ########.fr       */
+/*   Updated: 2026/02/17 18:05:34 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 int main()
 {
-    std::cout << "=== 1) ARRAY TEST (Dog/Cat as Animal*) ===" << std::endl;
+    std::cout << "***********ARRAY TEST (Dog/Cat as Animal*)************" << std::endl;
 
     const int N = 10;
     Animal* animals[N];
@@ -31,7 +31,7 @@ int main()
     for (int i = 0; i < N; i++)
         delete animals[i];
 
-    std::cout << "\n=== 2) DEEP COPY TEST (Dog) ===" << std::endl;
+    std::cout << "\n*********** DEEP COPY TEST (Dog)**************** " << std::endl;
 
     Dog original;
     original.setIdea(0, "I love bones");
@@ -43,7 +43,7 @@ int main()
     std::cout << "Original idea[0]: " << original.getIdea(0) << std::endl;
     std::cout << "Copy idea[0]:     " << copy.getIdea(0) << std::endl;
 
-    std::cout << "\n=== 3) DEEP COPY TEST (Cat operator=) ===" << std::endl;
+    std::cout << "\n ***************DEEP COPY TEST (Cat operator=)**************" << std::endl;
 
     Cat c1;
     c1.setIdea(1, "I rule the house");
