@@ -1,5 +1,4 @@
 #include "ClapTrap.hpp"
-#include <iostream>
 
 ClapTrap::ClapTrap()
     : name_("default"), hitPoints_(10), energyPoints_(10), attackDamage_(0)
@@ -89,4 +88,3 @@ void ClapTrap::beRepaired(unsigned int amount)
     std::cout << "ClapTrap " << name_ << " repairs itself for " << amount
               << " hit points! (HP: " << hitPoints_ << ")\n";
 }
-
