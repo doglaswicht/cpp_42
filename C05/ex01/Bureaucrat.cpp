@@ -6,12 +6,14 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/15 16:40:45 by dleite-b          #+#    #+#             */
-/*   Updated: 2026/03/15 17:05:38 by dleite-b         ###   ########.fr       */
+/*   Updated: 2026/03/16 16:30:21 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
+#include <iostream>
 
 Bureaucrat::Bureaucrat(const std::string& name, int grade): name_(name), grade_(grade) {
 	if(grade < 1)

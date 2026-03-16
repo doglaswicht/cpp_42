@@ -6,7 +6,7 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/15 16:45:47 by dleite-b          #+#    #+#             */
-/*   Updated: 2026/03/15 18:37:46 by dleite-b         ###   ########.fr       */
+/*   Updated: 2026/03/16 16:32:47 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class   Form
 {
     private:
             const std::string name_;
-            bool is_signed_;
+            bool isSigned_;
             const int gradeToSign_;
             const int gradeToExec_;
 

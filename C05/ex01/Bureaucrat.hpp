@@ -6,7 +6,7 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/15 16:40:54 by dleite-b          #+#    #+#             */
-/*   Updated: 2026/03/15 18:33:41 by dleite-b         ###   ########.fr       */
+/*   Updated: 2026/03/16 16:39:33 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,12 @@ class Bureaucrat
 		Bureaucrat (const Bureaucrat& other);
 		Bureaucrat& operator=(const Bureaucrat& other);
 		~Bureaucrat();
-		
 		const std::string& getName()const;
 		int getGrade()const;
 		
 		void incrementGrade();
 		void decrementGrade();
-		void Bureaucrat::signForm(Form& form) const
+		void signForm(Form& form) const;
 
 		class GradeTooHighException : public std::exception
 		{
