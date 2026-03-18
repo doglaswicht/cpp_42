@@ -6,12 +6,14 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 17:12:43 by dleite-b          #+#    #+#             */
-/*   Updated: 2026/03/18 15:20:05 by dleite-b         ###   ########.fr       */
+/*   Updated: 2026/03/18 15:39:06 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AForm.hpp"
 #include "Bureaucrat.hpp"
+#include "Intern.hpp"
+
 
 AForm::AForm() : _name("default"), _isSigned(false), _gradeToSign(150), _gradeToExec(150) {}
 
