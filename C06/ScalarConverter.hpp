@@ -6,7 +6,7 @@
 /*   By: dleite-b <dleite-b@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 10:56:04 by dleite-b          #+#    #+#             */
-/*   Updated: 2026/03/23 17:41:51 by dleite-b         ###   ########.fr       */
+/*   Updated: 2026/06/03 11:41:59 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,22 +16,41 @@
 
 #include <iostream>
 #include <string>
-#include <limits>
-#include <cstdlib>
-#include <iomanip>
-#include <cmath>
 #include <cctype>
+#include <cstdlib>
+#include <limits>
+#include <cmath>
+#include <iomanip>
 
 class ScalarConverter
 {
-	private:
-		ScalarConverter();
-		ScalarConverter(const ScalarConverter& other);
-		ScalarConverter& operator=(const ScalarConverter& other);
-		~ScalarConverter();
+    private:
+        enum Type
+        {
+            CHAR,
+            INT,
+            FLOAT,
+            DOUBLE,
+            SPECIAL,
+            INVALID
+        };
+        
+        ScalarConverter();
+        ScalarConverter(ScalarConverter const &other);
+        ScalarConverter& operator=(ScalarConverter const &other);
+        ~ScalarConverter();
+        
+        static Type detectType(std::string const &literal);
 
-	public:
-		static void convert(const std::string& literal);
+        static void printChar(double value);
+        static void printInt(double value);
+        static void printFloat(double value);
+        static void printDouble(double value);
+
+        
+    public:
+        static void convert(std::string const &literal);
+        
 };
 
 #endif
