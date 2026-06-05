@@ -37,7 +37,7 @@ ScalarConverter::Type ScalarConverter::detectType(const std::string& literal)
     if (literal.length() == 1 && !std::isdigit(literal[0]))
     {
         if (literal[0] == '+' || literal[0] == '-' ||
-            literal[0] == '.' || literal[0] == 'f')
+            literal[0] == '.')
             return INVALID;
         return CHAR;
     }
