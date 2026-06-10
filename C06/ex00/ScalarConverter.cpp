@@ -108,7 +108,7 @@ void ScalarConverter::convert(std::string const &literal)
     else if (literal == "+inf" || literal == "+inff")
         value = std::numeric_limits<double>::infinity();
     else if (literal == "-inf" || literal == "-inff")
-        value = -std::numeric_limits<double>::infinity();
+        value = std::numeric_limits<double>::infinity();
     else
         value = std::strtod(literal.c_str(), NULL);
     
