@@ -1,6 +1,7 @@
 #include "MutantStack.hpp"
 
 #include <iostream>
+#include <list>
 
 int main()
 {
@@ -37,5 +38,31 @@ int main()
 
     std::stack<int> s(mstack);
 
-    return 0;
+
+    std::cout << "std::list" << std::endl;
+
+
+
+    std::list<int> lst;
+
+    lst.push_back(5);
+    lst.push_back(17);
+    std::cout << lst.back() << std::endl;
+    lst.pop_back();
+    std::cout << lst.size() << std::endl;
+
+    lst.push_back(3);
+    lst.push_back(5);
+    lst.push_back(737);
+    lst.push_back(0);
+    std::list<int>::iterator itt = lst.begin();
+    std::list<int>::iterator itee = lst.end();
+
+    while (itt != itee)
+    {
+        std::cout << *itt << std::endl;
+        ++itt;
+    }
+
+    std::list<int> t(lst);
 }
